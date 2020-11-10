@@ -1,0 +1,221 @@
+.watching
+    width: 100%
+    height: 100%
+    overflow: hidden scroll
+    display: flex
+    padding: 15px 15%
+    &__video
+        width: 100%
+        height: auto
+        &-watch
+            a
+                text-decoraion: none
+                color: $fontColor
+                cursor: default
+                .video
+                    width: 100%
+                    &__player
+                        width: 100%
+                        &-video
+                            width: 100%
+                    &__info
+                        padding: 10px 25px
+                        &-title 
+                            font-size: 16px
+                            line-height: 20px
+                            padding: 10px 0
+                            text-shadow: $textShadow
+                        &-created
+                            font-size: 13px
+                            padding: 5px 5px 6px 5px
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            border-top: 1px solid rgba(0, 0, 0, .25)
+                            border-bottom: 1px solid rgba(0, 0, 0, .25)
+                            span:last-child
+                                font-size: 10px
+                        &-description
+                            width: 100%
+                            padding: 5px 0
+                            border-bottom: 1px solid rgba(0, 0, 0, .25)
+                            &-text
+                                font-size: 13px
+                                line-height: 18px
+                                letter-spacing: .5px
+                            &--more
+                                width: 100%
+                                height: 25px
+                                background: none
+                                border: none
+                                outline: none
+                                color: rgba(0, 0, 0, 0.3)
+                                &:hover
+                                    color: $fontColor
+                                    text-shadow: $textShadow
+                                    background: rgba(255, 255, 255, 0.2)
+                        &-actions
+                            display: flex
+                            justify-content: space-between
+                            padding: 5px 0
+                            height: 50px
+                            border-bottom: 1px solid rgba(0, 0, 0, .25)
+                            &-items-status 
+                                display: flex
+                                height: 100%
+                            &-item
+                                height: 100%
+                                font-size: 16px
+                                display: flex
+                                align-items: center
+                                &:last-child
+                                    margin-left: 10px
+                                span
+
+                                    padding-left: 5px 
+                                    padding-bottom: 3px 
+                                    font-size: 14px
+                            &-items
+                                &-btns
+                                    height: 100%
+                                &-btn
+                                    box-shadow: $boxShadow
+                                    height: 100%
+                                    width: 40px
+                                    text-align: center
+                                    padding-left: 7.5px
+                                    color: rgba(0, 0, 0, 0.4)
+                                    background: none
+                                    border: none
+                                    outline: none
+                                    &:hover
+                                        color: $fontColor
+                                        text-shadow: $textShadow
+
+        &-comments
+            width: 100% 
+            padding: 10px 25px
+            &-form
+            .comments-form
+                width: 100%
+                height: auto
+                &__form
+                    width: 100%
+                    height: auto
+                    textarea
+                        width: 100%
+                        min-height: 75px
+                        border: none
+                        outline: none
+                        resize: none
+                        box-shadow: inset $boxShadow
+                        padding: 10px 15px
+                        font-size: 13px
+                    &-actions
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        height: 50px
+                        padding: 5px 0
+                        border-bottom: 1px solid rgba(0, 0, 0, .25)
+                        &-comments-info
+                            font-size: 14px
+                        &-btn
+                            height: 100%
+                            padding: 0 25px
+                            background: $mainBlue
+                            color: #fff
+                            outline: none
+                            border: none
+                            box-shadow: $boxShadow
+                            text-shadow: $textShadow
+                            &:hover
+                                background: rgba($mainBlue, .7)
+            &-list
+            .comments-list
+                width: 100%  
+                height: auto
+                &__item
+                    display: flex
+                    width: 100%
+                    height: auto
+                    padding: 5px 0
+                    margin: 10px 0
+                    &-avatar
+                        height: 100px
+                        max-width: 100px
+                        box-shadow: $boxShadow
+                        overflow: hidden
+                    &-content
+                    .comment-content
+                        padding: 0 10px
+                        width: 100%
+                        flex-grow: 1
+                        height: auto
+                        &__header
+                            display: flex
+                            justify-content: space-between
+                            width: 100%
+                            padding-bottom: 5px
+                            border-bottom: 1px solid rgba(0, 0, 0, .25)
+                            font-size: 12px
+                        &__body
+                            padding: 10px 5px
+                            font-size: 13px
+                            line-height: 18px
+                            letter-spacing: .75px
+
+
+
+
+
+
+            
+    &__videos
+        max-width: 450px
+        min-width: 450px
+        height: 100%
+        margin-left: 20px
+        &-video
+            a
+                display: flex
+                text-decoraion: none
+                color: $fontColor
+        .video
+            margin-bottom: 10px
+            &__player
+                max-width: 175px
+                &-video
+                    width: 100%
+            &__info
+                padding: 0 10px
+                &-title
+                    width: 100%
+                    width: 100%
+                    font-size: 13px
+                    line-height: 19px
+                    font-width: 700
+                &-created
+                    font-size: 10px
+                    padding: 5px 0
+                    border-top: 1px solid rgba(0,0,0, .25)
+                    display: flex
+                    justify-content: space-between
+                    span:last-child
+                        font-size: 9px
+                &-actions
+                    display: flex
+                    &-items-status
+                        font-size: 16px
+                        justify-content: flex-end
+                        display: flex
+                        flex-grow: 1
+                    &-item
+                        font-size: 14px
+                        padding: 5px 10px
+                        display: flex
+                        span
+                            padding-left: 5px
+                            font-size: 12px
+                
+                            

@@ -1,0 +1,119 @@
+.upload-video
+    width: 100%
+    height: auto
+    padding: 100px 15%
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+        width: 100%  
+        height: auto
+    &__avatar
+        padding: 10px
+        max-width: 270px        
+    &__form
+        flex-grow: 1
+        width: 100%
+        max-width: 800px
+        height: auto
+        padding: 0 20px 10px 20px
+        &-form
+            width: 100%
+            height: auto
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            
+        &-upload
+            max-width: 335px
+            flex-grow: 1
+            height: auto
+            background: #FCFCFC
+            margin: 10px 0 auto
+            padding: 0 10px
+
+            i
+                font-size: 48px
+                text-shadow:  $textShadow
+                color: $fontColor
+                opacity: .25
+                &:hover
+                    opacity: .45
+        .poster
+            box-shadow: $boxShadow
+            width: 100%
+            min-width: 280px
+            height: 190px
+            min-height: 170px
+            span
+                margin-top: 10px
+                text-shadow:  $textShadow
+                color: $fontColor
+
+        .video
+            box-shadow: none
+            margin-top: 10px
+            width: 100%
+            span
+                box-shadow: $boxShadow
+                width: 100%
+                margin-right: auto
+                padding: 10px 25px
+                color: #fff
+                background: $mainBlue
+                margin: 5px auto
+                text-shadow:  $textShadow
+            
+
+        &-input
+            width: 100%
+            min-height: 50px
+            font-size: 14px
+            letter-spacing: .75px
+            border: none
+            box-shadow: inset $boxShadow
+            padding: 0 15px
+            outline: none
+            margin: 10px 0   
+            &-section
+                padding: 0 10px
+                box-shadow: none
+                width: 100%
+                min-width: 300px
+                max-width: 425px
+                
+        &-textarea
+            width: 100%
+            min-height: 120px
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: .75px
+            border: none
+            box-shadow: inset $boxShadow
+            padding: 10px 15px
+            margin: 10px 0
+            resize: none
+            outline: none
+        &-btns
+            width: 100%
+            height: 50px
+            text-align: center
+            padding: 5px 0
+            font-size: 14px
+        &-btn
+            width: auto
+            background: $mainBlue
+            color: #fff
+            text-shadow: $textShadow
+            border: none
+            outline: none
+            padding: 10px 15px
+            box-shadow: $boxShadow
+            &:hover
+                opacity: .8
+        a
+            margin-left: 10px
+            color: $fontColor
+            &:hover
+                color: $mainBlue

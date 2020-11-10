@@ -1,0 +1,82 @@
+.auth
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    padding-top: 100px
+
+    .form
+        &__wrapper
+            width: 30%
+        &__form
+            background: #fff
+            box-shadow: -6px -6px 9px rgba(0, 0, 0, .2), 6px 6px 9px rgba(0, 0, 0, .2)
+            padding: 25px
+            &-form
+                display: flex
+                flex-direction: column
+                width: 100%
+                input
+                    width: 100%
+                    height: 50px
+                    margin: 5px 0
+                    outline: none
+                    background: none
+                    border: none
+                    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, .2), inset 1px 1px 2px rgba(0, 0, 0, .2)
+                    padding: 0 10px
+                    font-size: 14px
+            &-btns
+                display: flex
+                justify-content: center
+                text-align: center
+                flex-direction: column
+                .auth__auth-group 
+                    display: flex
+                    justify-content: space-around
+                a
+                    font-size: 12px
+                    color: $fontColor
+                    &:hover
+                        color: $mainBlue
+            &-btn
+                width: 75px
+                padding: 10px 0
+                margin: 10px auto 15px 
+                display: flex   
+                font-size: 14px
+                justify-content: center
+                color: #fff
+                background: $mainBlue
+                outline: none
+                border: none
+                box-shadow: $boxShadow
+                &:hover 
+                    opacity: .8
+            &-auth
+                width: 100%
+                font-size: 14px
+                padding: 10px 15px
+                margin: 2.5px auto 
+                text-shadow: $textShadow
+                color: #fffFFF
+                border: none
+                box-shadow: $boxShadow
+                background: #fff
+                outline: none
+                i   
+                    margin-right: 5px
+                &:nth-child(3)
+                    margin-top: 15px
+                    padding-top: 12px
+                    background: $fontColor
+                    &:hover
+                        background: rgba($fontColor, .9)
+                &:nth-child(4)
+                    margin-top: 5px
+                    padding-top: 12px
+                    background: #3b5998
+                    &:hover
+                        background: rgba(#3b5998, .9)
+                    
+                    
+                

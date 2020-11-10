@@ -1,0 +1,76 @@
+.edit-video
+    width: 100%
+    height: auto
+    padding: 100px 15%
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        width: 100%  
+        height: auto
+    &__player
+        min-width: 400px
+        max-width: 45%
+        video
+            width: 100%
+    &__form
+        flex-grow: 1
+        min-width: 400px    
+        max-width: 55%
+        height: auto
+        padding: 0 20px 10px 20px
+        &-form
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+        &-input
+            width: 100%
+            min-height: 50px
+            font-size: 14px
+            letter-spacing: .75px
+            border: none
+            box-shadow: inset $boxShadow
+            padding: 0 15px
+            outline: none
+            margin: 10px 0
+        &-textarea
+            width: 100%
+            min-height: 125px
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: .75px
+            border: none
+            box-shadow: inset $boxShadow
+            padding: 10px 15px
+            margin: 10px 0
+            resize: none
+            outline: none
+        
+        &-btns
+            width: 100%
+            height: 50px
+            text-align: right
+            display: flex
+            justify-content: flex-end
+            padding: 5px 0
+        &-btn
+            width: auto
+            height: 100%
+            padding: 0 15px
+            border: none
+            outline: none
+            background: $mainBlue
+            color: #fff
+            text-shadow: $textShadow
+            margin-left: 10px
+            box-shadow: $boxShadow
+            &:first-child
+                margin-right: auto
+                background: none
+                color: $fontColor
+            &:last-child
+                background: $mainRed
+            &:hover
+                opacity: .8
+                

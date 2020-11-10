@@ -1,0 +1,60 @@
+.profile
+    width: 100%
+    height: auto
+    padding: 100px 15%
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+        width: 100%  
+        height: auto
+    &__avatar
+        padding: 10px
+        max-width: 270px
+        button
+            width
+    &__form
+        flex-grow: 1
+        width: 100%
+        max-width: 500px
+        height: auto
+        padding: 0 20px 10px 20px
+        &-form
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+        &-input
+            width: 100%
+            min-height: 50px
+            font-size: 14px
+            letter-spacing: .75px
+            border: none
+            box-shadow: inset $boxShadow
+            padding: 0 15px
+            outline: none
+            margin: 10px 0        
+        &-btns
+            width: 100%
+            height: 50px
+            text-align: right
+            padding: 5px 0
+            margin-top: 20px
+            font-size: 14px
+        &-btn
+            width: auto
+            background: $mainBlue
+            color: #fff
+            text-shadow: $textShadow
+            border: none
+            outline: none
+            padding: 10px 15px
+            box-shadow: $boxShadow
+            &:hover
+                opacity: .8
+        a
+            margin-left: 10px
+            color: $fontColor
+            &:hover
+                color: $mainBlue
